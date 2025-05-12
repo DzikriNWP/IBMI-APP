@@ -18,9 +18,9 @@ IBMI adalah aplikasi kalkulator BMI (Body Mass Index) berbasis Flutter yang memu
 
 | Home Page | BMI Result | History Page Kosong | History Page Isi |
 |-----------|------------|----------------------|------------------|
-| ![main_page](main_page.png) | ![popup](popup_message.png) | ![empty](ahistory_empty.png) | ![filled](history_filled.png) |
+| ![main_page](documentation-app/main_page.png) | ![popup](documentation-app/popup_message.png) | ![empty](documentation-app/history_empty.png) | ![filled](documentation-app/history_filled.png) |
 
-> Gambar-gambar di atas dapat kamu simpan di folder `assets/screenshots/` untuk ditampilkan dengan baik di README.
+> Gambar-gambar di atas dapat kamu simpan di folder `documentation-app` untuk ditampilkan dengan baik di README.
 
 
 
@@ -29,8 +29,9 @@ IBMI adalah aplikasi kalkulator BMI (Body Mass Index) berbasis Flutter yang memu
 1. Clone repository:
 
    ```bash
-   git clone https://github.com/username/ibmi_bmi_calculator.git
-   cd ibmi_bmi_calculator
+   [git clone https://github.com/username/ibmi_bmi_calculator.git](https://github.com/DzikriNWP/IBMI-APP.git)
+   cd IBMI-APP
+   
 Jalankan perintah berikut untuk menginstal dependensi:
 flutter pub get
 Jalankan aplikasi di emulator atau perangkat:
