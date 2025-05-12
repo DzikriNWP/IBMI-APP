@@ -1,16 +1,47 @@
-# ibmi
+# IBMI - BMI Calculator App
 
-A new Flutter project.
+IBMI adalah aplikasi kalkulator BMI (Body Mass Index) berbasis Flutter yang memungkinkan pengguna menghitung nilai BMI berdasarkan data **umur**, **berat badan**, **tinggi badan**, dan **jenis kelamin**, serta menyimpan riwayat perhitungan untuk referensi selanjutnya.
 
-## Getting Started
+## 📱 Fitur Aplikasi
 
-This project is a starting point for a Flutter application.
+- Input **Umur**, **Berat**, **Tinggi**, dan **Gender**
+- Perhitungan otomatis nilai BMI
+- Menampilkan hasil perhitungan beserta kategori: 
+  - Underweight
+  - Normal weight
+  - Overweight
+  - Obesity
+- Menyimpan riwayat perhitungan secara lokal menggunakan `shared_preferences`
+- Halaman riwayat dengan opsi **Clear History**
 
-A few resources to get you started if this is your first Flutter project:
+## 📷 Tampilan Aplikasi
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| Home Page | BMI Result | History Page Kosong | History Page Isi |
+|-----------|------------|----------------------|------------------|
+| ![main_page](main_page.png) | ![popup](popup_message.png) | ![empty](ahistory_empty.png) | ![filled](history_filled.png) |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> Gambar-gambar di atas dapat kamu simpan di folder `assets/screenshots/` untuk ditampilkan dengan baik di README.
+
+
+
+## 🧪 Cara Menjalankan
+
+1. Clone repository:
+
+   ```bash
+   git clone https://github.com/username/ibmi_bmi_calculator.git
+   cd ibmi_bmi_calculator
+Jalankan perintah berikut untuk menginstal dependensi:
+flutter pub get
+Jalankan aplikasi di emulator atau perangkat:
+flutter run
+
+🧰 Dependensi
+- flutter/cupertino.dart
+- shared_preferences - untuk menyimpan data lokal
+
+Tambahkan ke pubspec.yaml jika belum:
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.0.15
