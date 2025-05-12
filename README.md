@@ -29,7 +29,7 @@ IBMI adalah aplikasi kalkulator BMI (Body Mass Index) berbasis Flutter yang memu
 1. Clone repository:
 
    ```bash
-   [git clone https://github.com/username/ibmi_bmi_calculator.git](https://github.com/DzikriNWP/IBMI-APP.git)
+   [git clone https://github.com/DzikriNWP/IBMI-APP.git]
    cd IBMI-APP
    
 Jalankan perintah berikut untuk menginstal dependensi:
