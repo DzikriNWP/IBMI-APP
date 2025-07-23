@@ -1,24 +1,39 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:ibmi/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 import 'pages/main_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => ThemeProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return CupertinoApp(
-      title: "IMBI",
-      routes: {
-        '/': (BuildContext _context) => MainPage(),
+    // Gunakan Consumer untuk mendengarkan perubahan tema
+    return Consumer<ThemeProvider>(
+      builder: (context, themeProvider, child) {
+        return CupertinoApp(
+          title: "IMBI",
+          // Atur tema berdasarkan state dari provider
+          theme: CupertinoThemeData(
+            brightness:
+                themeProvider.isDarkMode ? Brightness.dark : Brightness.light,
+          ),
+          routes: {
+            '/': (BuildContext _context) => MainPage(),
+          },
+          initialRoute: '/',
+        );
       },
-      initialRoute: '/',
     );
   }
 }
